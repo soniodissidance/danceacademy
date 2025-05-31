@@ -1,0 +1,194 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'Georgia', serif;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e91e63;
+}
+
+/* Hero */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3em;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.btn {
+  background: #e91e63;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #c2185b;
+}
+
+/* About */
+.about .split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.about img {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about div {
+  flex: 1;
+}
+
+/* Classes */
+.classes ul {
+  list-style: square;
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+/* Team */
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.member {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 40px 0;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about .split, .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
