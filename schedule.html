@@ -31,6 +31,29 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         
+         /* Sections */
+         .section {
+            padding: 40px 20px;
+            text-align: center;
+         }
+         .section h2 {
+            margin-bottom: 20px;
+         }
+
+         /* Table */
+         table {
+            margin: auto;
+            border-collapse: collapse;
+         }
+         table, th, td {
+            border: 1px solid #FFF;
+         }
+         th, td {
+            padding: 10px 20px;
+         }
+               </style>
    </head>
    <body>
       <!-- header section start -->
@@ -75,39 +98,36 @@
       <!-- service section start -->
       <div class="service_section layout_padding">
          <div class="container">
-            <h1 class="service_taital">Our Classes</h1>
-            <div class="service_section_2 layout_padding">
-               <div class="owl-carousel owl-theme">
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Classical <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-2.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Odishi <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Other <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
+            <h1 class="service_taital">Class Schedule</h1>
+            <div class="service_section_2 layout_padding" style="padding-top: 10px; color: #FFF;">
+               
+               <!-- Schedule -->
+               <section id="schedule" class="section">
                  
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Bollywood <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-               </div>
+                  <table style="color: #FFF;">
+                        <tr>
+                           <th>Day</th>
+                           <th>Time</th>
+                           <th>Dance Style</th>
+                        </tr>
+                        <tr>
+                           <td>Monday</td>
+                           <td>5:00 - 6:00 PM</td>
+                           <td>Hip Hop</td>
+                        </tr>
+                        <tr>
+                           <td>Wednesday</td>
+                           <td>4:00 - 5:00 PM</td>
+                           <td>Classical</td>
+                        </tr>
+                        <tr>
+                           <td>Friday</td>
+                           <td>6:00 - 7:00 PM</td>
+                           <td>Contemporary</td>
+                        </tr>
+                  </table>
+               </section>
+
             </div>
          </div>
       </div>
