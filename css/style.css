@@ -225,10 +225,13 @@ button {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 15px;
+   /* padding-right: 15px;
     padding-left: 15px;
+    font-size: 18px;*/
+    padding-right: 9px;
+    padding-left: 6px;
     font-size: 18px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -268,14 +271,22 @@ button {
     flex: 1;
 }
 .call_btn a{
-    width: 100%;
+    /*width: 100%;
     float: left;
     font-size: 16px;
     color: #ffffff;
     background-color: #fa7e65;
     border-radius: 40px;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 20px;*/
+        width: 75%;
+    /* float: left; */
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #fa7e65;
+    border-radius: 40px;
+    text-align: center;
+    padding: 8px 42px;
 }
 
 .call_btn a:hover{
@@ -292,6 +303,7 @@ button {
 }
 .mr-auto, .mx-auto {
     flex: 3;
+        justify-content: flex-end; /* added for tabs to keep in right side */
 }
 /* banner section start */
 
@@ -919,6 +931,11 @@ button.owl-next {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+.logo_text {
+   
+    font-size: 60px;color: #fa7f63; font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 
