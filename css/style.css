@@ -214,7 +214,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-color: #ffffff;
+    background-color: black; /*changed from white*/
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #4f4f4f;
+    color: #b1a2a2; /*changed from #4f4f4f*/ 
 }
 .navbar-light .navbar-nav .active>.nav-link, 
 .navbar-light .navbar-nav .nav-link.active, 
@@ -321,14 +321,14 @@ button {
     color: #fa7f63;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 80px;
 }
 
 .contact_bt {
     width: 170px;
     margin: 0 auto;
-    padding: 330px 0px 0px 0px;
+    padding: 200px 0px 0px 0px;
 }
 
 .contact_bt a {

@@ -31,6 +31,27 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         .send_bt button {
+            width: 100%;
+            float: left;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 10px 0px;
+            background-color: #f8825f;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 40px;
+         }
+         .send_bt button:hover {
+            color: #ffffff;
+            background-color: #252525;
+         }
+      </style>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script>
+      emailjs.init("7fV5oZPUk6AQ8AqtkbA_e");
+      </script>
    </head>
    <body>
       <!-- header section start -->
@@ -43,7 +64,7 @@
                </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                     <li class="nav-item active">
+                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
@@ -61,7 +82,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="client.html">Client</a>
                      </li>
-                     <li class="nav-item">
+                     <li class="nav-item active">
                         <a class="nav-link" href="Contact.html">Contact Us</a>
                      </li>
                   </ul>
@@ -83,7 +104,7 @@
                <div class="row">
                   <div class="col-sm-12">
                      <div class="contact_main layout_padding">
-                        <form action="/action_page.php">
+                        <form id="contactForm">
                            <div class="form-group">
                               <input type="text" class="email-bt" placeholder="Lession" name="Lession">
                            </div>
@@ -99,8 +120,16 @@
                            <div class="form-group">
                               <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
                            </div>
+                            <div class="send_bt"> <button type="submit">Send Now</button> </div>
+                           
                         </form>
-                        <div class="send_bt"><a href="#">Send Now</a></div>
+                       
+                        <!--<div class="send_bt"> <a href="#">Send Now</a></div>-->
+                        <script>
+                              (function(){
+                                 emailjs.init("ZJpvjE8o8ErCt1E_X");
+                              })();
+                        </script>
                      </div>
                   </div>
                </div>
@@ -179,6 +208,14 @@
                 }
             }
          })   
-      </script>   
+      
+         document.getElementById("contactForm").addEventListener("submit", function(e) {
+         e.preventDefault();
+
+         emailjs.sendForm("service_4rh3bfh", "template_hxqbwj4", this)
+            .then(() => alert("Email sent successfully!"))
+            .catch(err => alert("Failed: " + err));
+         });
+</script>  
    </body>
 </html>
