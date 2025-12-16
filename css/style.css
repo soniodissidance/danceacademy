@@ -202,7 +202,7 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
+     padding-top: 20px;
      padding-bottom: 0px;
 }
 
@@ -311,7 +311,7 @@ button {
     width: 100%;
     float: left;
     position: relative;
-    padding-bottom: 90px;
+   /* padding-bottom: 90px;*/
 }
 .banner_img {
     /*width: 45%;*/
@@ -938,6 +938,18 @@ button.owl-next {
     font-size: 60px;color: #fa7f63; font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: black !important;
+}
+
+.w-100 {
+    
+    padding-left: 20%;
+    width: 70% !important;
+    padding-left: 20%;
+    height: 500px !important;
+}
 
 /* copyright section end */
 

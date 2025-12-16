@@ -367,7 +367,7 @@ button.owl-next {
 }
 
 .banner_section {
-    padding-top: 60px;
+    padding-top: 6px;
 }
 
 .banner_taital {
@@ -455,6 +455,13 @@ button.owl-next {
 .logo_text {
    
     font-size: 28px;color: #fa7f63;font-weight: bold; font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.w-100 {
+   
+    width: 80% !important;
+    padding-left: 20%;
+    height: 200px !important;
 }
 
 
