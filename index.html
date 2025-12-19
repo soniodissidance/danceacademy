@@ -96,6 +96,10 @@
             background-color: #252525;
          }
 
+         html {
+         scroll-behavior: smooth;
+         }
+
       </style>
       <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
       <script>
@@ -125,22 +129,22 @@
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#about">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="classes.html">Classes</a>
+                        <a class="nav-link" href="#classes">Classes</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">Schedule</a>
+                        <a class="nav-link" href="#schedule">Schedule</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="client.html">Testimonial</a>
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                      </li>
                   </ul>
                 
@@ -205,13 +209,14 @@
       <!-- banner section end -->
 
       <!-- about section start -->
-      <div class="about_section layout_padding" style="background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%); padding-bottom: 20px;">
+      <div  id="about" class="about_section layout_padding" style="background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%); padding-bottom: 20px;">
          <div class="container">
+            <h1 class="service_taital" style="color:black;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">About Our Accademy</h1>
            <div class="row">
             <div class="col-sm-6">
                <div class="card" style=" background-color: transparent;border: 0px solid rgba(0, 0, 0, .125);">
                   <div class="card-body">
-                   <img src="images/banner-img.png" class="d-block" alt="...">
+                   <img src="images/banner-img.png" class="d-block" alt="..." style="    max-width: 80%;">
                   
                   
                   </div>
@@ -236,33 +241,36 @@
       <!-- about section end -->
 
       <!-- service section start -->
-      <div class="service_section layout_padding">
+      <div  id="classes" class="service_section layout_padding">
          <div class="container">
-            <h1 class="service_taital">Our Classes</h1>
+            <h1 class="service_taital" style="color:white;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">Our Classes</h1>
             <div class="service_section_2 layout_padding">
                <div class="owl-carousel owl-theme">
-                  <div class="item">
+                  <div class="item " >
                      <div class="image_box">
-                        <img src="images/Odissi_Classical_transparent.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Odissi Classical <br>Dance</h3>
+                        <img src="images/Odissi_Classical_transparent.png" alt="#" style="margin-left: 42px;"/>
+                        <h3 class="sound_text">Odissi Classical <br>Dance</h3>
                      <div class="buy_bt"><a href="classical_dance.html">Read More</a></div>
+                     </div>
+                     
                   </div>
                  
                  
                   <div class="item">
                      <div class="image_box">
-                        <img src="images/Semi-Classical_transparent.png" alt="#"  style="width: 350px;"/>
+                        <img src="images/Semi-Classical_transparent2.png" alt="#" />
+                        <h3 class="sound_text">Semi Classical<br>Dance</h3>
+                     <div class="buy_bt"><a href="semi_classical_dance.html">Read More</a></div>
                      </div>
-                     <h3 class="sound_text">Semi Classical<br>Dance</h3>
-                     <div class="buy_bt"><a href="folk_dance">Read More</a></div>
+                     
                   </div>
                   <div class="item">
                      <div class="image_box">
-                        <img src="images/Odissi_Folk_transparent.png" alt="#" style="width: 270px;" />
+                        <img src="images/Odissi_Folk_transparent1.png" alt="#"  />
+                         <h3 class="sound_text">Folk <br>Dance</h3>
+                     <div class="buy_bt"><a href="folk_dance.html">Read More</a></div>
                      </div>
-                     <h3 class="sound_text">Folk <br>Dance</h3>
-                     <div class="buy_bt"><a href="semi_classical_dance">Read More</a></div>
+                    
                   </div>
                    
                  
@@ -274,12 +282,12 @@
     
 
        <!-- schedule section start -->
-      <div class="about_section layout_padding" style="padding-bottom: 20px;">
+      <div id="schedule" class="about_section layout_padding" style="padding-bottom: 20px;">
          <div class="container">
             <div class="about_main">
                <div class="row">
                   <div class="col-sm-12">
-                     <h1 class="about_taital">Our Schedule</h1>
+                     <h1 class="about_taital" style="color:black;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">Our Schedule</h1>
                      
                      <!-- Schedule -->
                      <section id="schedule" class="section">
@@ -367,11 +375,11 @@
       </div>
       -- price section end -->
       <!-- client section start -->
-      <div class="client_sectiion">
+      <div id="testimonial" class="client_sectiion">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="client_taital">Testimonial</h1>
+                  <h1 class="client_taital" style="color:white;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">Testimonial</h1>
                </div>
             </div>
             <div id="custom_slider" class="carousel slide" data-ride="carousel">
@@ -380,6 +388,11 @@
                   <li data-target="#custom_slider" data-slide-to="1"></li>
                   <li data-target="#custom_slider" data-slide-to="2"></li>
                   <li data-target="#custom_slider" data-slide-to="3"></li>
+                  <li data-target="#custom_slider" data-slide-to="4"></li>
+                  <li data-target="#custom_slider" data-slide-to="5"></li>
+                  <li data-target="#custom_slider" data-slide-to="6"></li>
+                  <li data-target="#custom_slider" data-slide-to="7"></li>
+                  <li data-target="#custom_slider" data-slide-to="8"></li>
                   
                </ol>
                <div class="carousel-inner">
@@ -387,21 +400,23 @@
                      <div class="client_section_2">
                         <div class="client_main">
                            <div class="testimonial">
-                              <h3 class="name_text">Sonali Rath </h3>
-                              <p class="dolor_text">Parent</p>
+                              
                               <p class="lorem_text">
                                 My daughter recently graduated in Odissi Classical Dance from Soni Dance Academy, and we couldn’t be more proud. We are deeply grateful to Guru Sunita Rout for her exceptional guidance, patience, and unwavering dedication in nurturing her students with grace, discipline, and true passion for the art form.
 
                                  We highly recommend Soni Dance Academy to anyone looking to learn Odissi Classical Dance in an authentic, inspiring, and supportive environment.
+                               </br></br><span class="name_text" style="text-align: center;">Sonali Rath <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
+                              
+                              
                            </div>
                         </div>
                         <div class="client_main" style="margin-top: 40px;">
                            <div class="testimonial">
-                              <h3 class="name_text">Rebati Raman </h3>
-                              <p class="dolor_text" style="float: right;">Parent</p>
-                              <p class="lorem_text">
+                              
+                               <p class="lorem_text">
                                  Soni is a gifted artist who sincerely cares about her learners. The area’s premier dance school, without a doubt. Her performances with the troupe grace the best venues. Strongly recommend Soni Dance Academy. My daughter Ahana really enjoys every class.
+                                  </br></br><span class="name_text" style="text-align: center;">Rebati Raman <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                            
@@ -413,19 +428,17 @@
                         <div class="client_main">
                           
                            <div class="testimonial">
-                              <h3 class="name_text">Aarvi priyank </h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  We feel so fortunate to have found Sunita Rout’s Odissi Dance Academy! Guru Sunita Rout is not only an amazing dancer with exceptional Odissi skills but also a wonderful teacher who nurtures every child like her own. Her deep knowledge, grace, and passion for classical dance truly shine through in every class.....
+                                 </br></br><span class="name_text" style="text-align: center;">Aarvi priyank <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                         </div>
                         <div class="client_main" style="margin-top: 40px;">
                            <div class="testimonial">
-                              <h3 class="name_text">Deepti saxena</h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  Soni is an amazing artist, very talented and considerate of her students. Best dance school in the area. Her performances with her students are showcased in all the major dance venues. 100% recommendations for Soni Dance Academy!!
+                                 </br></br><span class="name_text" style="text-align: center;">Deepti saxena <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                           
@@ -437,19 +450,17 @@
                         <div class="client_main">
                           
                            <div class="testimonial">
-                              <h3 class="name_text">Vijaya Das </h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  Soni is an amazing dance guru! Our daughter is just starting out, and she absolutely loves coming to Soni Dance Academy. Soni is incredibly warm and patient, and makes sure every student feels comfortable and excited to move. Highly recommend!
+                                 </br></br><span class="name_text" style="text-align: center;">Vijaya Das <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                         </div>
                         <div class="client_main" style="margin-top: 40px;">
                            <div class="testimonial">
-                              <h3 class="name_text">Nupur Mishra</h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  Guru Sunita Rout (Soni) is an amazing dance teacher! Her passion for dance truly shines through in every class and the performances by her students. She’s patient, encouraging, and makes learning fun for kids.My daughter has been her student from past 5 years, she absolutely loves her classes and has grown so much in confidence and skill. I highly recommend Soni dance academy to anyone looking for a positive and inspiring experience!
+                                 </br></br><span class="name_text" style="text-align: center;">Nupur Mishra <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                            
@@ -461,20 +472,18 @@
                         <div class="client_main">
                          
                            <div class="testimonial">
-                              <h3 class="name_text">Swati Nayak </h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  We feel so lucky to have found Sunita Rout’s Odissi Dance Academy! Guru Sunita Rout is not only a talented Odissi dancer but also a wonderful teacher who understands each child’s strengths and helps them grow with care and patience.
                                  My daughter loves her dance lessons and adores her guru. It’s a joy to see her learn with such passion and discipline. Highly recommend her academy to anyone who wants to experience the beauty of Odissi! 💃
+                                 </br></br><span class="name_text" style="text-align: center;">Swati Nayak <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                         </div>
                         <div class="client_main" style="margin-top: 40px;">
                            <div class="testimonial">
-                              <h3 class="name_text">Lopamudra Rana</h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  My daughter has been learning odissi dance from Soni, and I’m really happy with the way she nurtures my daughter and my daughter is growing in both skill and confidence. Soni is very patient, kind, and truly passionate about dance. She gives good attention to every child and teaches with so much dedication. My daughter loves going to her classes and enjoys every session. I’m very thankful for her guidance and highly recommend her to anyone looking for a good odissi classical dance teacher.
+                                 </br></br><span class="name_text" style="text-align: center;">Lopamudra Rana <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                           
@@ -486,27 +495,110 @@
                         <div class="client_main">
                         
                            <div class="testimonial">
-                              <h3 class="name_text">Geeta Sahrawat </h3>
-                              <p class="dolor_text">Parent</p>
                               <p class="lorem_text">
                                  Soni is the best teacher I’ve came across so far. She is multitalented and is well versed in with all kind of dances. She is very patient, filled with positive energy, skilled and passionate about teaching dance to kids and adults. I’ve performed in a Ladies group dance on an event and it was very well recognized and received lot of accolades.   
+                                 </br></br><span class="name_text" style="text-align: center;">Geeta Sahrawat <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                         </div>
                         <div class="client_main" style="margin-top: 40px;">
                            <div class="testimonial">
-                              <h3 class="name_text">Lipsa Nayak</h3>
-                              <p class="dolor_text">Parent</p>
-                              <p class="lorem_text">
+                             <p class="lorem_text">
                                  Soni Dance Academy offers a vibrant and authentic Odissi dance experience, led by Guru Sunita Rout, known for her dedication to preserving classical Odissi dance traditions.
                                  Authentic instruction rooted in classical Odissi traditions, with deep emphasis on posture, expression, and storytelling.
                                  Guru Sunita Rout’s teaching style is both nurturing and rigorous, making it ideal for beginners and advanced dancers alike.
+                                 </br></br><span class="name_text" style="text-align: center;">Lipsa Nayak <span class="dolor_text">&nbsp;(Parent)</span> </span>
                               </p>
                            </div>
                           
                         </div>
                      </div>
                   </div> 
+                  <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                        
+                           <div class="testimonial">
+                              <p class="lorem_text">
+                                 Soni aunty is a great guru. She not only teaches dance but she also guides us on how to be a good person. It has been a transformative experience for me as her student. She has inspired me to carry forward our Odiya culture.
+                                 </br></br><span class="name_text" style="text-align: center;">Anoushka Das <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="client_main" style="margin-top: 40px;">
+                           <div class="testimonial">
+                             <p class="lorem_text">
+                                 Very dedicated dance teacher. She gives her best to make each and every dance performance perfect. My daughter started with her 2 years back. Now she can’t miss a single class. We are blessed to have Soni apa as my daughter’s teacher .
+                              
+                                 </br></br><span class="name_text" style="text-align: center;">Jaso Behera <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div> 
+                  <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                        
+                           <div class="testimonial">
+                              <p class="lorem_text">
+                                 A talented and professional dance guru who love dancing and teaching kids. I had seen some of her student performance in rangamanch,cary diwali and various other cultural event. Their performance is worth watching. Strongly recommend SDA.
+                                 </br></br><span class="name_text" style="text-align: center;">Praveen Patro <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="client_main" style="margin-top: 40px;">
+                           <div class="testimonial">
+                             <p class="lorem_text">
+                                 Soni’s passion for dance shines through in her teaching. She’s wonderful with both kids and adults, and I highly recommend her classes.
+
+                                 </br></br><span class="name_text" style="text-align: center;">Sushma Thakur <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                        
+                           <div class="testimonial">
+                              <p class="lorem_text">
+                                 
+                                 "Soni is an incredible dance teacher! Her passion and energy are contagious, and she has a gift for working with young children. Her classes are always fun. Highly recommend!"
+
+                                 </br></br><span class="name_text" style="text-align: center;">Gauri dave <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="client_main" style="margin-top: 40px;">
+                           <div class="testimonial">
+                             <p class="lorem_text">
+                                 Soni teaching is amazing! So friendly and patient, my daughter really loves her classes and has learned so much.
+                                 </br></br><span class="name_text" style="text-align: center;">Praveena <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                        
+                           <div class="testimonial">
+                              <p class="lorem_text">
+                                 
+                                 She is very friendly and very talented. Highly recommended for dance classes.
+                                 </br></br><span class="name_text" style="text-align: center;">Joshjash Thatikondla <span class="dolor_text">&nbsp;(Parent)</span> </span>
+                              </p>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
                   
                   
                   
@@ -516,9 +608,9 @@
       </div>
       <!-- client section end -->
       <!-- contact section start -->
-      <div class="contact_section layout_padding">
+      <div id="contact" class="contact_section layout_padding">
          <div class="container">
-            <h1 class="contact_taital">Get In Touch</h1>
+            <h1 class="contact_taital" style="color:black;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">Get In Touch</h1>
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-sm-12">

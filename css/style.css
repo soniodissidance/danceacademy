@@ -146,6 +146,7 @@ a,
 img {
      max-width: 100%;
      height: auto;
+     caret-color: transparent;
 }
 
  :focus {
@@ -402,11 +403,12 @@ button {
 
 .service_section .owl-item.active .image_box {
     transform: scale(.7);
+     
 }
 
 .service_section .owl-item.active.center .image_box {
     transform: scale(1);
-    padding-bottom: 60px;
+    padding-bottom: 20px;
    /* margin-bottom: 90px;*/
 }
 .price_text {
@@ -427,7 +429,7 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
-    padding-bottom: 0px;
+    padding-top: 25px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -446,7 +448,7 @@ button {
     padding: 10px 0px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     border-radius: 40px;
 }
 
@@ -735,15 +737,15 @@ button.owl-next {
 }
 .name_text{
     width: 100%;
-    float: left;
-    font-size: 24px;
+    float: right;
+    font-size: 20px;
     color: #252525;
     font-weight: bold;
 }
 
 .dolor_text{
     width: 100%;
-    float: left;
+   
     font-size: 14px;
     color: #f29448;
     margin: 0px;
@@ -755,7 +757,7 @@ button.owl-next {
     font-size: 14px;
     color: #252525;
     margin: 0px;
-    padding-top: 10px;
+   
     padding-bottom: 30px;
 }
 
