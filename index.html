@@ -83,6 +83,10 @@
          
 
       </style>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script>
+      emailjs.init("7fV5oZPUk6AQ8AqtkbA_e");
+      </script>
    </head>
    <body>
       <!-- header section start -->
@@ -505,9 +509,15 @@
                <div class="row">
                   <div class="col-sm-12">
                      <div class="contact_main layout_padding">
-                        <form action="/action_page.php">
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Lession" name="Lession">
+                         <form id="contactForm">
+                           <div class="form-group" style="margin-bottom: 60px;">
+                              
+                              <select id="Lession" name="Lession" class="email-bt">
+                                 <option value="Odissi Classical Dance">Odissi Classical Dance</option>
+                                 <option value="Folk Dance">Folk Dance</option>
+                                 <option value="Semi Classical Dance">Semi Classical Dance</option>
+                                
+                              </select></br>
                            </div>
                            <div class="form-group">
                               <input type="text" class="email-bt" placeholder="Name" name="Name">
@@ -521,8 +531,14 @@
                            <div class="form-group">
                               <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
                            </div>
+                            <div class="send_bt"> <button type="submit">Send Now</button> </div>
+                           
                         </form>
-                        <div class="send_bt"><a href="#">Send Now</a></div>
+                        <script>
+                              (function(){
+                                 emailjs.init("ZJpvjE8o8ErCt1E_X");
+                              })();
+                        </script>
                      </div>
                   </div>
                </div>
@@ -601,6 +617,14 @@
                 }
             }
          })   
+
+          document.getElementById("contactForm").addEventListener("submit", function(e) {
+         e.preventDefault();
+
+         emailjs.sendForm("service_4rh3bfh", "template_hxqbwj4", this)
+            .then(() => alert("Email sent successfully!"))
+            .catch(err => alert("Failed: " + err));
+         });
 
       </script>   
    </body>
