@@ -385,14 +385,15 @@ button.owl-next {
 
 .service_taital {
     font-size: 30px;
+    padding-top: 1px !important;
 }
 
 .service_section_2 {
-    padding-top: 50px;
+   /* padding-top: 50px;*/
 }
 
 .image_box {
-    padding: 30% 88px;
+    /*padding: 30% 88px;*/
 }
 
 .service_section .owl-item.active.center .image_box {
@@ -415,6 +416,39 @@ button.owl-next {
 }
 .client_section_2 {
     width: 100%;
+}
+.classicalImg{
+    width: 100%;
+}
+
+.classicalImgRight{
+    width: 100% ;
+    padding-left: 20px;
+    
+}
+
+.semiClassicalImg{
+     width: 100%;
+}
+.semiClassicalImgRight{
+    width: 100% ;
+    padding-left: 20px;
+}
+.folkImg{
+     width: 100%;
+}
+.folkImgRight{
+    width: 100% ;
+    padding-left: 20px;
+}
+
+.client_img_semiclassical{
+    max-width: 100%;
+    padding-right: 5px;
+}
+
+.client_img_folk{
+    max-width: 93%;
 }
 
 .client_main {
