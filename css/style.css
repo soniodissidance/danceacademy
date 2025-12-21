@@ -394,6 +394,15 @@ button {
     font-weight: bold;
 }
 
+.service_taital_classes{
+    width: 100%;
+    font-size: 40px;
+    color: #fefefd;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
 .service_section_2 {
     width: 100%;
     float: left;
@@ -1002,6 +1011,12 @@ button.owl-next {
     max-width: 86%;
     float: right;
     padding-right: 20px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+   
+   touch-action: auto;
+   user-select: auto;
 }
 /* copyright section end */
 

@@ -386,6 +386,13 @@ button.owl-next {
 .service_taital {
     font-size: 26px;
     padding-top: 1px !important;
+    font-family: MV Boli;
+}
+
+.service_taital_classes {
+    font-size: 30px;
+    padding-top: 1px !important;
+    font-family: MV Boli;
 }
 
 .service_section_2 {
