@@ -53,68 +53,7 @@
          th, td {
             padding: 10px 20px;
          }
-
-         
-         .gallery {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-         gap: 15px;
-         }
-
-         .gallery img {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         border-radius: 10px;
-         cursor: pointer;
-         transition: transform 0.3s ease, box-shadow 0.3s ease;
-         }
-
-         .gallery img:hover {
-         transform: scale(1.05);
-         box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-         }
-
-         /* Style the image */
-            .thumbnail {
-              
-              cursor: pointer;
-              transition: 0.3s;
-              height:100%;
-              width:100%;
-            }
-
-            /* Modal styling */
-            .modal {
-              display: none;
-              position: fixed;
-              z-index: 999;
-              padding-top: 60px;
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              overflow: auto;
-              background-color: rgba(0,0,0,0.8);
-            }
-
-            .modal-content {
-              display: block;
-              margin: auto;
-              max-width: 80%;
-              
-            }
-
-            .close {
-              position: absolute;
-              top: 30px;
-              right: 45px;
-              color: white;
-              font-size: 40px;
-              font-weight: bold;
-              cursor: pointer;
-            }
-      </style>
+               </style>
    </head>
    <body>
       <!-- header section start -->
@@ -129,7 +68,7 @@
                </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                     <li class="nav-item active">
+                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
@@ -141,14 +80,14 @@
                      <li class="nav-item">
                         <a class="nav-link" href="schedule.html">Schedule</a>
                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="event.html">Event</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="client.html">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                      </li>
                   </ul>
                   </div>
@@ -160,27 +99,38 @@
       <div class="price_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-sm-12" >
-                  <h1 class="price_taital" style="color:#fa7e65;">Program Name - 12/1212</h1>
+               <div class="col-sm-12">
+                  <h1 class="price_taital" style="color:black;padding-top: 30px;font-family: MV Boli; caret-color: transparent;">Events</h1>
                </div>
             </div>
+            <div class="price_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <h3 class="first_price_text">Past Events </h3>
+                     <div class="price_box">
+                        <img src="images/galery2.png" alt="#" />
+                        <div class="readmore_bt"><a href="gallery.html">view</a></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="first_price_text">Upcoming Events</h3>
+                     <div class="price_box">
+                        <img src="images/galery2.png" alt="#" />
+                        <div class="readmore_bt"><a href="upcoming_gallery.html">view</a></div>
+                        
+                     </div>
+                  </div>
+               </div>
+              
+            </div>
          </div>
-          <div class="gallery">
-            <img src="images/banner-img.png" alt="Image 1" onclick="openModal(this.src)">
-            <img src="images/banner-img.png" alt="Image 2" onclick="openModal(this.src)">
-            <img src="images/banner-img.png" alt="Image 3" onclick="openModal(this.src)">
-            <img src="images/banner-img.png" alt="Image 4" onclick="openModal(this.src)">
-            <img src="images/banner-img.png" alt="Image 5" onclick="openModal(this.src)">
-            <img src="images/banner-img.png" alt="Image 6" onclick="openModal(this.src)">
-         </div>
-      </div>
       <!-- Galary section end -->
       <!-- footer section start -->
       <div class="footer_section">
          <div class="location_bg">
             <div class="container">
                <div class="location_main">
-                  <ul>
+                   <ul>
                      <li>
                         <a href="https://www.youtube.com/@sonidanceacademy-apex"><img src="images/youtube.png" style="width: 35px;height:35px;">
                         <span class="padding_15">YouTube</span></a>
@@ -191,7 +141,7 @@
                      </li>
                      <li>
                         <a href="#"><img src="images/phone-call.png" style="width: 35px;height:35px;">
-                        <span class="padding_15">Call +01 6196428135</span></a>
+                        <span class="padding_15">Call +1 (619) 642-8135</span></a>
                      </li>
                      <li>
                         <a href="mailto:soni.odissidance@gmail.com"><img src="images/email_logo.png" style="width: 35px;height:35px;">
@@ -210,12 +160,6 @@
            <p class="copyright_text">© 2025 All Rights Reserved.Design by Soni Dance Academy</p>   
          </div>
       </div>
-
-       <div id="imageModal" class="modal" onclick="closeModal()">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <img class="modal-content" id="modalImage">
-        </div>
-
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -252,17 +196,6 @@
                 }
             }
          })   
-
-
-          function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("imageModal").style.display = "block";
-          }
-
-          function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
-          }
-       
       </script>   
    </body>
 </html>
