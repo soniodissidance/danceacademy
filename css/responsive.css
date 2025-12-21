@@ -508,6 +508,19 @@ button.owl-next {
         max-width: 100%;
     }
 
+.card-text{
+    margin-left: 1%;
+    
+    /* float: right; */
+    margin-right: 10px;
+}
+
+.landingpage_about_image{
+    max-width: 50% !important;
+    margin-left: 90px !important;
+    float: none !important;
+}
+
 }
 
 @media (min-width: 1200px) {
