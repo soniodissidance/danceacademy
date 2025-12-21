@@ -491,12 +491,27 @@ button.owl-next {
     font-size: 25px;color: #fa7f63;font-weight: bold; font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
+.readmore_bt_top {
+    /* padding-top: 1px; */
+    /* margin-left: 105px; */
+    display: none;
+}
+
 .w-100 {
    
-    width: 80% !important;
-    padding-left: 20%;
+    width: 100% !important;
+    padding-left: 0%;
     height: 200px !important;
 }
 
+.container {
+        max-width: 100%;
+    }
 
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
 }
