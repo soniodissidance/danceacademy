@@ -545,6 +545,11 @@ button.owl-next {
    transform: scale(1) !important;
 }
 
+    .aboutImage{
+        height: 400px;
+        width: 350px;
+    }
+
 }
 
 @media (min-width: 1200px) {

@@ -1072,5 +1072,11 @@ button.owl-next {
         color: red !important;
        
     }
+    
+
+    .landingpage_about_image{
+        height: 400px;
+        width: 350px;
+    }
 /* copyright section end */
 
