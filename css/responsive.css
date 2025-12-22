@@ -528,6 +528,23 @@ button.owl-next {
     float: none !important;
 }
 
+.service_section .owl-item.active .image_box {
+    transform: scale(.6);
+     
+}
+
+.service_section .owl-item.active.center .image_box {
+    transform: scale(.9);
+    padding-bottom: 20px;
+   /* margin-bottom: 90px;*/
+}
+.image_box:hover {
+   /*  background-color: #f1f1f1; */
+   cursor: pointer;
+   /*width: 400px;*/
+   transform: scale(1) !important;
+}
+
 }
 
 @media (min-width: 1200px) {
