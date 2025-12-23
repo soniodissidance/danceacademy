@@ -655,7 +655,7 @@
                            <div class="form-group" style="margin-bottom: 60px;">
                               
                               <select id="program" name="Class" class="email-bt" >
-                                 <!--<option value="">Select Dance Class</option>-->
+                                 <option value="">Select Dance Class</option>
                                  <option value="Odissi Classical Dance">Odissi Classical Dance</option>
                                  <option value="Folk Dance">Folk Dance</option>
                                  <option value="Semi Classical Dance">Semi Classical Dance</option>
@@ -664,15 +664,15 @@
                               <small class="error-msg">Please select a class</small>
                            </div>
                            <div class="form-group">
-                              <input id="name" type="text" class="email-bt" placeholder="Name" name="Name" required>
+                              <input id="name" type="text" class="email-bt" placeholder="Name" name="Name">
                               <small class="error-msg">Name is required</small>
                            </div>
                            <div class="form-group">
-                              <input id="phone" type="text" class="email-bt" placeholder="Phone Number" name="Phone Number" required > 
+                              <input id="phone" type="text" class="email-bt" placeholder="Phone Number" name="Phone Number" > 
                               <small class="error-msg">Phone number is required</small>
                            </div>
                            <div class="form-group">
-                              <input id="email" type="email" class="email-bt" placeholder="Email" name="Email" required>
+                              <input id="email" type="email" class="email-bt" placeholder="Email" name="Email" >
                                <small class="error-msg">Valid email is required</small>
                            </div>
                            <div class="form-group">
@@ -772,12 +772,12 @@
 
           document.getElementById("contactForm").addEventListener("submit", function(e) {
             e.preventDefault();
-            
-           
+            var isValid =  validateForm();
+            if(isValid){
                emailjs.sendForm("service_4rh3bfh", "template_hxqbwj4", this)
                .then(() => alert("Email sent successfully!"))
                .catch(err => alert("Failed: " + err));
-           
+            }
          });
 
          function validateForm() {

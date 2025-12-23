@@ -526,6 +526,7 @@ button.owl-next {
     max-width: 50% !important;
     margin-left: 90px !important;
     float: none !important;
+    height: 230px;
 }
 
 .service_section .owl-item.active .image_box {
@@ -550,6 +551,23 @@ button.owl-next {
         width: 350px;
     }
 
+    .margintopcardtext{
+        margin-top: 0px;
+    }
+
+    .margintopcardbody{
+        margin-top: -85px;
+    }
+ 
+
+    .lorem_text_classical{
+        width: 100% !important;
+    }
+
+    .client_img_classic {
+   
+     margin-top: -50px;
+    }
 }
 
 @media (min-width: 1200px) {

@@ -624,7 +624,8 @@ button.owl-next {
 .first_price_text{
     width: 100%;
     font-size: 20px;
-    color: #fefefd;
+    font-weight: bold;
+    color: black;
     text-align: center;
     text-transform: uppercase;
     background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
@@ -636,7 +637,7 @@ button.owl-next {
 .price_box {
     width: 84%;
     text-align: center;
-    background-color: #ffffff;
+    background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
     height: 310px;
     padding: 30px 20px 0px 20px;
     box-shadow: 0px 2px 5px 1px;
@@ -714,6 +715,7 @@ button.owl-next {
     width: 80%;
     margin: 0 auto;
     padding-top: 50px;
+    margin-bottom: 30%;
 
 }
 .client_main {
@@ -1013,12 +1015,24 @@ button.owl-next {
    max-width: 89%;
     float: right;
     padding-right: 50px;
+    margin-top: -100px;
 }
 
 .client_img_folk{
-    max-width: 86%;
+    /*max-width: 86%;
     float: right;
-    padding-right: 20px;
+    padding-right: 20px;*/
+    max-width: 77%;
+    float: right;
+    padding-right: 50px;
+    margin-top: -44px;
+}
+
+.client_img_classic{
+        max-width: 100%;
+    float: right;
+    /* padding-right: 50px; */
+    margin-top: -100px;
 }
 
 .owl-carousel.owl-drag .owl-item {
@@ -1078,5 +1092,48 @@ button.owl-next {
         height: 400px;
         width: 350px;
     }
+
+  
+
+
+/* Error state */
+.error {
+  border-color: red !important;
+}
+
+.nice-select email-bt error{
+    border-color: red !important;   
+}
+
+/* Valid state */
+.valid {
+  border-color: grey !important;
+}
+
+/* Error text */
+.error-msg {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+
+.margintopcardtext{
+         margin-top: 150px;
+    }
+
+    .margintopcardbody{
+         margin-top: -80px;
+    }
+ 
+  
+  /* Grey border for valid text inputs */
+  input:valid {
+    border: 2px solid grey;
+  }
+
+  .lorem_text_classical{
+    width: 83% !important;
+  }
 /* copyright section end */
 
