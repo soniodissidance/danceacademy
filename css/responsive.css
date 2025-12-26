@@ -452,10 +452,12 @@ button.owl-next {
 .client_img_semiclassical{
     max-width: 100%;
     padding-right: 5px;
+    padding-top: 30px;
 }
 
 .client_img_folk{
     max-width: 93%;
+    padding-right: 5px;
 }
 
 .client_main {

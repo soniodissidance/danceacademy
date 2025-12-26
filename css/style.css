@@ -797,7 +797,7 @@ button.owl-next {
 }
 
 .client_sectiion .carousel-indicators .active {
-    background-color: #252525;
+    background-color:#f29448;
 }
 
 /* customer section end */
@@ -1009,13 +1009,13 @@ button.owl-next {
 }
 .folkImgRight{
      width: 50% ;
-    padding-top: 50px;
+   
 }
 .client_img_semiclassical{
    max-width: 89%;
     float: right;
-    padding-right: 50px;
-    margin-top: -100px;
+    padding-right: 31px;
+    margin-top: -140px;
 }
 
 .client_img_folk{
@@ -1025,14 +1025,14 @@ button.owl-next {
     max-width: 77%;
     float: right;
     padding-right: 50px;
-    margin-top: -44px;
+   
 }
 
 .client_img_classic{
-        max-width: 100%;
+     max-width: 70%;
     float: right;
-    /* padding-right: 50px; */
-    margin-top: -100px;
+    padding-right: 50px;
+    margin-top: -157px;
 }
 
 .owl-carousel.owl-drag .owl-item {
@@ -1133,7 +1133,7 @@ button.owl-next {
   }
 
   .lorem_text_classical{
-    width: 83% !important;
+    width: 70% !important;
   }
 
    .gallery {
@@ -1154,6 +1154,19 @@ button.owl-next {
     .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .first_price_text_upcoming{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    height: auto;
+    padding: 30px 0px 50px 0px;
+    position: relative;
     }
 /* copyright section end */
 

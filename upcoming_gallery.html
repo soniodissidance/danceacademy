@@ -54,6 +54,46 @@
          th, td {
             padding: 10px 20px;
          }
+
+          /* Style the image */
+            .thumbnail {
+              
+              cursor: pointer;
+              transition: 0.3s;
+              height:100%;
+              width:100%;
+            }
+
+            /* Modal styling */
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 999;
+              padding-top: 60px;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0,0,0,0.8);
+            }
+
+            .modal-content {
+              display: block;
+              margin: auto;
+              max-width: 80%;
+              
+            }
+
+            .close {
+              position: absolute;
+              top: 30px;
+              right: 45px;
+              color: white;
+              font-size: 40px;
+              font-weight: bold;
+              cursor: pointer;
+            }
                </style>
    </head>
    <body>
@@ -118,18 +158,16 @@
             <div class="price_section_2">
                <div class="row">
                   <div class="col-md-6">
-                     <h3 class="first_price_text">Event 1 - 02/2026 </h3>
-                     <div class="price_box">
-                        <img src="images/galery2.png" alt="#" />
-                        <div class="readmore_bt"><a href="#">view</a></div>
+                     <h3 class="first_price_text_upcoming">Soni Dance Academy Anual Racital - 02/2026 </h3>
+                     <div class="price_box" style="    width: 50%;height: 200px;">
+                        <img style="cursor: pointer;" src="images/upcoming/1.jpg"  onclick="openModal(this.src)" />
                      </div>
+                    
                   </div>
                   <div class="col-md-6">
-                     <h3 class="first_price_text">Event 2 - **/2026</h3>
-                     <div class="price_box">
-                        <img src="images/galery2.png" alt="#" />
-                        <div class="readmore_bt"><a href="#">view</a></div>
-                        
+                     <h3 class="first_price_text_upcoming">Comming soon</h3>
+                     <div class="price_box" style="    width: 50%;height: 200px;">
+                        <img style="cursor: pointer;"  src="images/galery2.png"   onclick="openModal(this.src)"/>
                      </div>
                   </div>
                </div>
@@ -172,6 +210,11 @@
            <p class="copyright_text">© 2025 All Rights Reserved.Design by Soni Dance Academy</p>   
          </div>
       </div>
+       <div id="imageModal" class="modal" onclick="closeModal()">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+        </div>
+
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -208,6 +251,15 @@
                 }
             }
          })   
+
+           function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("imageModal").style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+          }
       </script>   
    </body>
 </html>
