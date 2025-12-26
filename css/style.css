@@ -1019,12 +1019,10 @@ button.owl-next {
 }
 
 .client_img_folk{
-    /*max-width: 86%;
+    max-width: 100%;
     float: right;
-    padding-right: 20px;*/
-    max-width: 77%;
-    float: right;
-    padding-right: 50px;
+    /* padding-right: 50px; */
+    margin-top: -110px;
    
 }
 
