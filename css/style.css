@@ -1185,6 +1185,7 @@ button.owl-next {
         background-repeat: no-repeat;
         background-attachment: local;
          cursor: pointer;
+         margin-bottom: 30px;
     }
 
 
